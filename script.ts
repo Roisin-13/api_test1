@@ -1,7 +1,7 @@
 let button = document.getElementById("advbtn"); 
 
 const clickHandler = () => {
-    let bar = fetch("https://api.adviceslip.com/advice")
+    fetch("https://api.adviceslip.com/advice")
         .then((response) => response.json())
         .then((foo) => {
             console.log(foo.slip.advice)
