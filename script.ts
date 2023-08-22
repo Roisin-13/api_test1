@@ -8,6 +8,7 @@ const clickHandler = () => {
             console.log(foo.slip.id)
             let header = document.getElementById("hi");
             header!.innerHTML = foo.slip.advice;
+            //hi I'm a comment
         })
         .then((foo) => { console.log(typeof foo, "poop") })
 }
