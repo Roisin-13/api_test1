@@ -8,13 +8,17 @@ const clickHandler = () => {
             console.log(foo.slip.id)
             let header = document.getElementById("hi");
             header!.innerHTML = foo.slip.advice;
-            //hi I'm a comment
         })
-        .then((foo) => { console.log(typeof foo, "poop") })
+        .catch((foo) => { 
+            console.log(typeof foo, "poop")
+            let header = document.getElementById("hi");
+            header!.innerHTML = "This isn't advice - please help I'm broken 😭";
+         })
 }
 
 
 
 button!.addEventListener("click", clickHandler);
+
 
     
